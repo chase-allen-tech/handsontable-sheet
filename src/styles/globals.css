@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+    height: 100%;
+}
+
+.custom-handsontable-container {
+    /* width: 300px !important; */
+}
+
+.custom-handsontable {
+    /* margin-right: 4rem;
+    margin-bottom: 1.5rem; */
+}
+
+.cell-scrollbar::-webkit-scrollbar {
+    width: 1px;
+}
+
+.colHeader {
+    margin-right: 1px;
+}
+
+.ht_master > .wtHolder, .ht_master, .htRowHeaders {
+    /* height: 400px !important; */
+}
+
+
+.ht_master tr>td {
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+/* Track */
+
+.cell-scrollbar::-webkit-scrollbar-track {
+    box-shadow   : inset 0 0 5px #ddd;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+.cell-scrollbar::-webkit-scrollbar-thumb {
+    background   : #ddd;
+    border-radius: 10px;
+}
+
+.ht_clone_top,
+.ht_clone_top_left_corner,
+.ht_clone_left {
+    z-index: 1 !important;
+}
+
+/* relation table display and hover */
+.rel-block {
+    background-color: #0ff;
+    border-radius   : 5px;
+    padding         : 2px 4px 2px 2px;
+    margin          : 2px;
+    align-items     : center;
+    text-align      : center;
+
+    position: relative;
+    display : inline-block;
+}
+
+.rel-block:hover .rel-dropdown-content {
+    display: block;
+}
+
+.handsontable th,
+.handsontable td {
+    overflow: visible !important;
+}
+
+.rel-dropdown-content {
+    display         : none;
+    position        : absolute;
+    background-color: #f1f1f1;
+    box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index         : 100;
+    margin-left     : 1rem;
+    margin-top      : 0.2rem;
+    border-radius   : 0.5rem;
+}
+
+.rel-dropdown-content div {
+    color          : black;
+    padding        : 12px 16px;
+    text-decoration: none;
+    display        : flex;
+}
+
+.visible-show {
+    visibility: visible !important;
+}
+
+.cbg-gray-200 {
+    background-color: #ddd !important;
+}
+
+
+
+/* Modal */
+.cell-modal {
+    display         : none;
+    position        : fixed;
+    z-index         : 1;
+    left            : 0;
+    top             : 0;
+    width           : 100%;
+    height          : 100%;
+    overflow        : auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content/Box */
+.cell-modal-content {
+    background-color: #fefefe;
+    margin          : 15% auto;
+    padding         : 20px;
+    border          : 1px solid #888;
+    width           : 50%;
+    position        : relative;
+}
+
+
+/* The Close Button */
+.cell-close {
+    position   : absolute;
+    right      : 1rem;
+    color      : #aaa;
+    font-size  : 28px;
+    font-weight: bold;
+}
+
+.cell-close:hover,
+.cell-close:focus {
+    color          : black;
+    text-decoration: none;
+    cursor         : pointer;
+}
+
+.htSelectEditor {
+    -webkit-appearance: menulist-button !important;
+    position          : absolute;
+    width             : auto;
+}
+
+.z-20-imp {
+    z-index: 20 !important;
+}
+
+.top-100 {
+    top: 100%
+}
+
+.bottom-100 {
+    bottom: 100%
+}
+
+.max-h-select {
+    max-height: 300px;
+}
+
+.htSelectEditor {
+    border: 2px solid #555;
+}
+
+.c-bg-table {
+    background-color: #F0F0F0;
+}
+
+.c-table-container {
+    border-top         : 1px solid #E7EAEC;
+    background-color   : #F3F3F3;
+    overflow           : hidden;
+    position: relative;
+    /* min-height      : 300px; */
+}
+
+.bg-table-title {
+    background-color: #FF8000;
+}
+
+.bg-table {
+    background-color: #F3F3F3;
+}
+
+.dropdown-heading-value {
+    text-align: left;
+}
